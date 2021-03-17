@@ -51,7 +51,7 @@ header img {
     display: none;
 }
 
-main {
+section {
     padding: 15px;
     margin: 10px;
 }
@@ -67,11 +67,19 @@ button {
     border: none;
     color: hsl(257, 40%, 49%);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
 }
 
 button:hover {
     background-color: hsl(300, 69%, 71%);
 }
+
+/* button:active {
+    outline: none;
+    border: none;
+} */
+
+button:focus {outline:0;}
 
 .sosmed {
     margin: 50px 30px 30px;
@@ -115,6 +123,14 @@ button:hover {
     }
 
     section {
+        flex-direction: column;
+        display: flex;
+        align-items: flex-start;
+        /* justify-content: flex-start; */
+        margin-top: 20px;
+    }
+
+    main {
         display: flex;
         padding: 0 50px;
         margin: 40px;
@@ -136,14 +152,6 @@ button:hover {
         display: inline;
         position: absolute;
         z-index: -1;
-    }
-
-    main {
-        flex-direction: column;
-        display: flex;
-        align-items: flex-start;
-        /* justify-content: flex-start; */
-        margin-top: 20px;
     }
 
     .sosmed {
